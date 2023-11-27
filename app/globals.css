@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.cart-button ~ input:checked ~ .cart {
+  height: 100%;
+  display: block;
+}
