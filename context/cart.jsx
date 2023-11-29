@@ -28,6 +28,19 @@ const reducer = (state, action) => {
       ]
     }
 
+    case 'DECREASE_QUANTITY': {
+      const { id } = actionPayload;
+      return state.map(item => {
+        if (item.id === id) {
+          return {
+            ...item,
+            quantity: item.quantity > 1 ? item.quantity - 1 : 1,
+          };
+        }
+        return item;
+      });
+    }
+
     case 'REMOVE_FROM_CART': {
       const {id} = actionPayload
       return state.filter(item => item.id !== id)
@@ -49,6 +62,11 @@ export function CartProvider ({children}) {
     payload: product
   })
 
+  const decreaseQuantity = product => dispatch({ 
+    type: 'DECREASE_QUANTITY', 
+    payload: product
+  })
+
   const removeFromCart = product => dispatch({
     type: 'REMOVE_FROM_CART',
     payload: product
@@ -61,6 +79,7 @@ export function CartProvider ({children}) {
       value={{
         cart: state,
         addToCart,
+        decreaseQuantity,
         removeFromCart,
         clearCart
       }}
