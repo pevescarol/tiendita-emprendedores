@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.cart-button ~ input:checked ~ .cart {
-  height: 100%;
-  display: block;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }

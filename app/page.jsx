@@ -1,4 +1,3 @@
-import Cart from '@/components/Cart'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Products from '@/components/Products'
@@ -9,7 +8,6 @@ export default function Home() {
   return (
     <CartProvider>
       <Header />
-      <Cart />
       <Products />
     </CartProvider>
   )
