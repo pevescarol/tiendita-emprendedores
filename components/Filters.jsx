@@ -9,7 +9,7 @@ const Filters = ({ filters, setFilters }) => {
 
 
   return (
-    <section className='flex w-full items-center justify-evenly text-sm font-bold'>
+    <section className='flex w-full items-center justify-evenly text-sm font-bold mt-36'>
       <div className='flex gap-4'>
         <label htmlFor="category">Categoria</label>
         <select id="category" onChange={handleCategoryChange} value={filters.category}>
