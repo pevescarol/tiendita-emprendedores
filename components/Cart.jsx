@@ -45,16 +45,16 @@ const Cart = () => {
   }, [cart])
 
   return (
-    <div className=''>
+    <div>
       <button 
         className='flex items-center bg-[#e8f7eb] rounded-full cursor-pointer w-16 h-10 justify-center p-1 relative transition-all duration-300 ease-in-out hover:scale-110' 
         onClick={() => setCartOpen(!cartOpen)}
       >
         <BsCart3 className='text-[#40aa54] text-xl' />
-        {(cart.length > 0) ? <div className='text-black bg-amber-300 rounded-full text-[10px] items-center flex justify-center absolute -left-2 top-1 text-center font-bold w-5 h-5'>{(cart.length > 0) ? (cart.reduce((total, product) => (total  + product.quantity), 0)) : ''}</div> : ''}
+        {(cart.length > 0) ? <div className='text-white bg-emerald-600 rounded-full text-[10px] items-center flex justify-center absolute -left-2 top-1 text-center font-bold w-5 h-5'>{(cart.length > 0) ? (cart.reduce((total, product) => (total  + product.quantity), 0)) : ''}</div> : ''}
       </button>
 
-      <aside className={`${cartOpen ? 'block' : 'hidden'} bg-[#e8f7eb] px-7 py-16 absolute h-screen right-0 top-0 w-full md:w-96 overflow-scroll`}>
+      <aside className={`${cartOpen ? 'block' : 'hidden'} bg-[#e8f7eb] px-7 py-10 absolute h-screen right-0 top-0 w-full md:w-96 overflow-scroll`}>
         <div>
           <button onClick={() => setCartOpen(false)} className='cart-button flex gap-2 items-center text-md text-black font-semibold cursor-pointer' >Volver <BsArrowRight className='font-bold text-xl' /> </button>
         </div>
