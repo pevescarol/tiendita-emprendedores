@@ -19,31 +19,28 @@ const How = () => {
     {
       id: 3,
       title: '3',
-      description: '¡Listo! Continuaremos con tu pedido a través de WhatsApp, y te ayudaremos para coordinar envío y pago.',
+      description: '¡Listo! Continuaremos con tu pedido a través de WhatsApp, y te ayudaremos para coordinar entrega y pago.',
       image: '',
     }
   ]
 
   return (
-    <div className='max-w-4xl mx-auto px-4 md:px-14 py-16'>
-      <div className="md:w-1/2 mx-auto text-center">
-        <h2 className='text-lg text-slate-600 font-semibold mb-3'>Cómo realizar tu pedido:</h2>
-      </div>
+    <section className='max-w-5xl mx-auto px-4 py-12'>
       {/* items */}
-      <div className='mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-4 '>
+      <div className='grid md:grid-cols-3 grid-cols-1 md:w-11/12 mx-auto gap-2 '>
         {pasos.map(paso => (
-          <div key={paso.id} className='py-8 text-center md:w-[200px] mx-auto rounded-md flex items-stretch justify-center h-full '>
-            <div>
-              <div className='bg-[#e8f7eb] mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl flex items-center justify-center'>
+          <div key={paso.id} className='px-6 md:px-0 py-8 text-center lg:text-start mx-auto flex flex-col lg:flex-row items-center h-full '>
+              <div className='w-[30%] mb-4 mx-auto flex items-center justify-center'>
                 {/* <Image src={paso.image} alt='' className='-ml-5' /> */}
-                <h4 className='text-[#40aa54] text-xl font-bold'>{paso.title}</h4>
+                <h4 className='text-[#40aa54] text-xl font-bold '>{paso.title}</h4>
               </div>
+            <div className='px-2 w-[70%]'>
               <p className='text-sm text-slate-500'>{paso.description}</p>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
