@@ -1,12 +1,13 @@
-import React from 'react'
+import Image from 'next/image'
+import banner2Img from '../public/banner-2.jpg'
 
 const Banner = () => {
   return (
-    <div className='max-w-4xl w-full mx-auto rounded-2xl mt-24 md:mt-28 bg-[#e8f7eb] h-[350px]'>
-      <div className='text-center'>
-        Banner
-      </div>
-    </div>
+    <section className='max-w-5xl w-full mx-auto lg:rounded-2xl mt-20 md:mt-28 bg-[#e8f7eb] h-[250px] md:h-[350px]'>
+      <Image src={banner2Img} alt='banner' loading='lazy' width={2000} height={2000} 
+          className='w-full h-full lg:rounded-2xl object-cover'
+      />
+    </section>
   )
 }
 
