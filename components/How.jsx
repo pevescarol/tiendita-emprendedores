@@ -29,11 +29,10 @@ const How = () => {
       {/* items */}
       <div className='grid md:grid-cols-3 grid-cols-1 md:w-11/12 mx-auto gap-2 '>
         {pasos.map(paso => (
-          <div key={paso.id} className='px-6 md:px-0 py-8 text-center lg:text-start mx-auto flex flex-col lg:flex-row items-center h-full '>
-              <div className='w-[30%] mb-4 mx-auto flex items-center justify-center'>
-                {/* <Image src={paso.image} alt='' className='-ml-5' /> */}
-                <h4 className='text-[#40aa54] text-xl font-bold '>{paso.title}</h4>
-              </div>
+          <div key={paso.id} className=' py-4 text-center lg:text-start mx-auto flex flex-col lg:flex-row items-center h-full '>
+            <div className='w-[30%] mb-3 mx-auto flex items-center justify-center'>
+              <h3 className='text-[#40aa54] text-4xl md:text-6xl font-bold '>{paso.title}</h3>
+            </div>
             <div className='px-2 w-[70%]'>
               <p className='text-sm text-slate-500'>{paso.description}</p>
             </div>
