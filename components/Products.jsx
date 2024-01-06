@@ -22,7 +22,8 @@ const Products = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const productsData = await fetchProducts(); // función fetchProducts para obtener los datos
+        const googleSheetAPI = process.env.NEXT_PUBLIC_GOOGLE_SHEET_API
+        const productsData = await fetchProducts(googleSheetAPI); // función fetchProducts para obtener los datos
         setProducts(productsData);
         setLoading(false)
       } catch (error) {

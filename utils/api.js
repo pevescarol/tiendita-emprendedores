@@ -1,11 +1,9 @@
 import axios from 'axios';
 import Papa from 'papaparse';
 
-export const fetchProducts = async () => {
+export const fetchProducts = async (googleSheetAPI) => {
   try {
-    const response = await axios.get(
-      'https://docs.google.com/spreadsheets/d/e/2PACX-1vTokatoKs5heh_nCu0wi4Z-urC7YCNKQyRoxEudCuwBINGMp3_5cZOmZBIZr-GdbZaeIoUlHyM09MD_/pub?gid=0&single=true&output=csv'
-    );
+    const response = await axios.get(googleSheetAPI);
 
     const result = Papa.parse(response.data, {
       header: true,

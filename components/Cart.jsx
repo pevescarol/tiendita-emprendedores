@@ -34,6 +34,8 @@ function CartItem ({image, price, title, quantity, addToCart, decreaseQuantity, 
 }
 
 const Cart = () => {
+  const numWhatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER
+
   const [ cartOpen, setCartOpen ] = useState(false)
   
   const { cart, clearCart, addToCart, decreaseQuantity, removeFromCart } = useCart()
@@ -76,7 +78,7 @@ const Cart = () => {
           <button className='py-2 px-3 rounded-xl bg-[#40aa54] text-white hover:bg-white hover:text-[#40aa54]'>
             {(cart.length > 0) && (
             <Link 
-              href={`https://wa.me/5491138752984?text=${encodeURIComponent(text)}`} 
+              href={`https://wa.me/${numWhatsapp}?text=${encodeURIComponent(text)}`} 
               target='_blank' 
               className='flex items-center justify-center gap-3 font-bold'
             >
