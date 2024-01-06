@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tienda Online Simple
 
-## Getting Started
+Este proyecto es una tienda online básica diseñada para pequeños emprendedores que desean exhibir sus productos en línea. Utiliza Google Sheets como una forma sencilla de cargar productos para facilitar su uso y manejo.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Carga de productos desde Google Sheets.
+- Fácil visualización de productos con imágenes, títulos, descripciones y precios.
+- Función de carrito para agregar y eliminar productos.
+- Completar pedidos a través de WhatsApp para coordinar el pago y la entrega.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Uso
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Visita la tienda en tu navegador.
+2. Explora los productos disponibles.
+3. Agrega productos al carrito y completa la compra a través de WhatsApp.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologías Utilizadas
 
-## Learn More
+- Next.js
+- React
+- Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+## Agradecimientos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este proyecto fue realizado gracias a los recursos que comparten:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [@midudev](https://twitch.tv/midudev)
+- [@goncy](https://goncy.dev)
 
-## Deploy on Vercel
+## Contacto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Para más información, envíame un mensaje en [carol.peves@gmail.com](mailto:carol.peves@gmail.com) 
